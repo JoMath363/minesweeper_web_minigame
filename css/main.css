@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background: #D8DEEC;
+
+    font-family: "Orbitron", sans-serif;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 10dvh;
+    padding: 0 10%;
+
+    background: lightgray;
+    border-top: solid white 0.4rem;
+    border-left: solid white 0.4rem;
+    border-bottom: solid gray 0.4rem;
+    border-right: solid gray 0.4rem;
+
+    & #tittle{
+        display: flex;
+        align-items: center;
+
+        margin: 0;
+
+        font-size: 2rem;
+
+        & img {
+            width: 3rem;
+            margin-right: 0.4rem;
+        }
+    }
+
+    & #controls{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        & .control-btn{
+            height: 3rem;
+            padding: 0 2rem;
+        
+            background: lightgray;
+        
+            border-top: solid white 0.2rem;
+            border-left: solid white 0.2rem;
+            border-bottom: solid gray 0.2rem;
+            border-right: solid gray 0.2rem;
+        
+            font-size: 1.2rem;
+            font-family: "Orbitron", sans-serif;
+
+            cursor: pointer;
+
+            &:hover {
+                border-top: solid gray 0.2rem;
+                border-left: solid gray 0.2rem;
+                border-bottom: solid white 0.2rem;
+                border-right: solid white 0.2rem;
+            }
+
+            &:active {
+                background: white;
+            }
+            
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+#main {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+
+    height: 60dvh;
+    width: 500px;
+    margin: 15dvh auto 0;
+
+    background: lightgray;
+
+    border-top: solid white 0.4rem;
+    border-left: solid white 0.4rem;
+    border-bottom: solid gray 0.4rem;
+    border-right: solid gray 0.4rem;
+}
+
+#display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 90%;
+    height: 15%;
+
+    & .counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        height: 70%;
+        width: 8rem;
+        margin: 0 1rem;
+
+        background: black;
+        border-top: solid white 0.2rem;
+        border-left: solid white 0.2rem;
+        border-bottom: solid gray 0.2rem;
+        border-right: solid gray 0.2rem;
+
+        & span {
+            display: inline-block;
+
+            color: red;
+            font-size: 2.8rem;
+
+            transform: scaleY(1.6);
+        } 
+    }
+
+    & #result{
+        height: 70%;
+        width: 4rem;
+
+        border-top: solid white 0.2rem;
+        border-left: solid white 0.2rem;
+        border-bottom: solid gray 0.2rem;
+        border-right: solid gray 0.2rem;
+
+        outline: solid rgba(0, 0, 0, 0.5) 1px;
+
+        text-align: center;
+        align-content: center;
+
+        & img {
+            height: 3.5rem;
+            width: 3.5rem;
+        }
+    }
+}
+
+#mine_grid{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+
+    width: 90%;
+    height: 70%;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-top: solid white 0.2rem;
+    border-left: solid white 0.2rem;
+    border-bottom: solid gray 0.2rem;
+    border-right: solid gray 0.2rem;
+
+    color: transparent;
+    user-select: none;
+
+    cursor: pointer;
+
+    & .flag {
+        height: 80%;
+        width: 90%;
+        display: none;
+
+        &.flagged{
+            display: inline;
+        }
+    }
+
+    & .bomb {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    & .number {
+        display: none;
+    }
+
+    &.clean{
+        background: transparent;
+        border: solid rgba(128, 128, 128, 0.5) 1px;
+
+        font-size: 2rem;
+        font-weight: 600;
+
+        cursor: default;
+
+        & .number {
+            display: inline;
+        }
+
+        & .bomb {
+            display: inline;
+            background: red;
+        }
+
+        & .flag {
+            display: none;
+        }
+    }
+}
+
+.shadow-border {
+    border-top: solid gray 0.4rem;
+    border-left: solid gray 0.4rem;
+    border-bottom: solid white 0.4rem;
+    border-right: solid white 0.4rem;
+}

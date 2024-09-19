@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>My Minesweeper</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="tittle">
+            <img src="img/bomb-icon.png">
+            MineSweeper
+        </h1>
+
+        <div id="controls">
+            <button id="start_btn" class="control-btn" onclick="start_game()">New Game</button>
+            <select id="difficulty_select" class="control-btn">
+                <option>Easy</option>
+                <option>Normal</option>
+                <option>Hard</option>
+            </select>
+        </div>
+    </header>
+    <main id="main">
+        <section id="display" class="shadow-border">
+            <div class="counter"><span id="flag_counter">000</span></div>
+            <div id="result"><img id="result_icon" src="img/default-icon.png"></div>
+            <div class="counter"><span id="time_counter">000</span></div>
+        </section>
+        <section id="mine_grid" class="shadow-border">
+            <!-- <span class="grid-item active">1</span> -->
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
