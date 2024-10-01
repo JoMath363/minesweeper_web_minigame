@@ -1,11 +1,10 @@
-#Minesweeper Clone
+🎮 Minesweeper Clone
+A simple clone of the classic Minesweeper game, developed as a personal project to replicate its key features. Enjoy the challenge of clearing the grid without triggering any mines!
 
-A simple implementation of the classic Minesweeper game. This project replicates the basic functionality of the game, allowing users to reveal cells, flag mines, and win by clearing the grid without detonating any mines.
-
-Features
-Customizable Grid Sizes: Choose different grid sizes and mine counts.
-Flag and Reveal: Mark suspected mines or reveal cells.
-Win/Lose Conditions: Track game state to determine when the player wins or loses.
-Recursive Clearing: Automatically reveal adjacent cells if no mines are nearby.
+✨ Features
+Customizable Grid Sizes: Choose between different grid sizes and difficulty levels.
+Flag and Reveal: Right-click to flag suspected mines, left-click to reveal cells.
+Win/Lose Conditions: Clear the board or lose if you hit a mine.
+Recursive Clearing: Automatically reveal adjacent cells when no mines are nearby.
 
 Link to the project page: https://jomath363.github.io/minesweeper_web_minigame/
