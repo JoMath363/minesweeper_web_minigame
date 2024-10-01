@@ -4,6 +4,8 @@
 
 A simple clone of the classic Minesweeper game, developed as a personal project to replicate its key features. Enjoy the challenge of clearing the grid without triggering any mines!
 
+[go]([http://stackoverflow.com](https://jomath363.github.io/minesweeper_web_minigame/)){:target="_blank"}
+
 <a href="https://jomath363.github.io/minesweeper_web_minigame/" target="_blank"> Go to the project</a>
 
 **✨ Features:**
