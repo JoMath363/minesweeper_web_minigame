@@ -8,10 +8,10 @@ A simple clone of the classic Minesweeper game, developed as a personal project 
 
 **✨ Features:**
 
-_Customizable Grid Sizes:_  Choose between different grid sizes and difficulty levels.
+Customizable Grid Sizes:  _Choose between different grid sizes and difficulty levels._
 
-_Flag and Reveal:_ Right-click to flag suspected mines, left-click to reveal cells.
+Flag and Reveal: _Right-click to flag suspected mines, left-click to reveal cells._
 
-_Win/Lose Conditions:_ Clear the board or lose if you hit a mine.
+Win/Lose Conditions: _Clear the board or lose if you hit a mine._
 
-_Recursive Clearing:_ Automatically reveal adjacent cells when no mines are nearby.
+Recursive Clearing: _Automatically reveal adjacent cells when no mines are nearby._
