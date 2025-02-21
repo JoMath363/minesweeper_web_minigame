@@ -49,7 +49,7 @@ class Minefield {
         } 
 
         let icon = result == 'loss'? 'loss-icon' : 'win-icon';
-        result_icon.src = `../img/${icon}.png`;
+        result_icon.src = `img/${icon}.png`;
         flag_display.innerHTML = '000';
 
         this.stop_timer();
