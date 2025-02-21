@@ -47,9 +47,8 @@ class Minefield {
             each.classList.add('clean')
             each.replaceWith(each.cloneNode(true))
         } 
-
-        let icon = result == 'loss'? 'loss-icon' : 'win-icon';
-        result_icon.src = `img/${icon}.png`;
+        
+        result_icon.src = `img/${result}-icon.png`;
         flag_display.innerHTML = '000';
 
         this.stop_timer();
